@@ -1,7 +1,69 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+h1 {
+    font-family: 'Indie Flower', cursive;
+    padding:10vw;
+    text-align:center;
+}
+
+/* below class applied to body tag- make changes here to affect entire page :)*/
+.greybg {
+    color: #fdfff0;
+    background-color: #46575c;
+}
+
+/* useful general class */
+.text-center {
+    text-align: center;
+}
+
 div {
 	word-wrap: normal;
 	text-align: left;
 	position: relative;
 	margin-left: 25%;
 	margin-right: 25%;
+}
+
+/* general link styles */
+a {
+    text-decoration: none;
+    color: #de31ff;
+    /* below line makes color transition slower on hover to be more natural */
+    transition: color 0.5s ease;
+}
+a:hover {
+    color: #b43acb;
+}
+
+/* these two rules make the bullets purple while maintining color of list items */
+li {
+    color: #b43acb
+}
+li span {
+    color: #fdfff0;
+}
+
+/* icon style */
+.ion-ios-flask-outline {
+    color: #de31ff;
+    font-size: 3em;
+    display: block;
+    margin: 60px;
+    transition: all 0.2s ease;
+}
+
+.ion-ios-flask-outline:hover {
+    transform: translate(0, -5px);
+    font-size: 4em;
+}
+
+@media (max-width: 767px) {
+    /* less padding on smaller screens */
+    div {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
